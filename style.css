@@ -1,0 +1,183 @@
+/*------------------------------------*\
+    $FONTS
+\*------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+
+/* Icons from http://icomoon.io */
+@font-face {
+    font-family: 'icomoon';
+    font-style: normal;
+    font-weight: normal;
+    src:url('fonts/icomoon.eot?mvjhan');
+    src:url('fonts/icomoon.eot?#iefixmvjhan') format('embedded-opentype'),
+    url('fonts/icomoon.woff?mvjhan') format('woff'),
+    url('fonts/icomoon.ttf?mvjhan') format('truetype'),
+    url('fonts/icomoon.svg?mvjhan#icomoon') format('svg');
+}
+
+/*------------------------------------*\
+    $GENERAL
+\*------------------------------------*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+	/* Image from http://subtlepatterns.com */
+    background: url('images/tweed.png') center center #555;
+    font-family: 'Roboto Slab', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+}
+
+/*------------------------------------*\
+    $ICONS
+\*------------------------------------*/
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+}
+.icon-clock:before {
+    content: "\e600";
+    font-size: .6em;
+}
+.icon-spinner:before {
+    content: "\e601  ";
+}
+.icon-play:before {
+    content: "\e602  ";
+}
+.icon-stop:before {
+    content: "\e603  ";
+}
+
+/*------------------------------------*\
+    $TEXT ELEMENTS
+\*------------------------------------*/
+h1 {
+    color: #fff;
+    font-size: 10em;
+    line-height: 0;
+    margin: .25em 0 0 0;
+    text-shadow: 0 1px 0 #ccc, 0 .05em 0 #bbb, 0 .1em .15em rgba(0,0,0,.4);
+}
+h2 {
+    color: #fff;
+    font-size: 2.5em;
+    margin: .5em 0 2em 0;
+    text-shadow: 0 1px 0 #ccc, 0 .05em 0 #bbb, 0 .2em .15em rgba(0,0,0,.4);
+}
+a {
+    color: #aaa;
+    font-size: 2em;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #333;
+    -webkit-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+}
+a:hover {
+    color: #ccc;
+}
+
+/*------------------------------------*\
+    $CHRONO
+\*------------------------------------*/
+#chrono {
+    background: -webkit-linear-gradient(140deg, #333 0%, rgba(0,0,0,.7) 60%, #333 61%, #333 100%);
+    background: -moz-linear-gradient(140deg, #333 0%, rgba(0,0,0,.7) 60%, #333 61%, #333 100%);
+    background: linear-gradient(140deg, #333 0%, rgba(0,0,0,.7) 60%, #333 61%, #333 100%);
+    border: .25em solid #aaa;
+    border-radius: .75em;
+    box-shadow: inset 0 .2em 0 #ddd, 0 .4em 0 #888, 0 .5em .5em rgba(0,0,0,.5);
+    color: #fff;
+    display: inline-block;
+    font-family: 'Arial', sans-serif;
+    font-size: 5em;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    padding: .5em 1em;
+    position: relative;
+    text-shadow: 0 0 5px #bbb;
+    -webkit-transform: perspective(500px) rotateX(25deg);
+    -moz-transform: perspective(500px) rotateX(25deg);
+    transform: perspective(500px) rotateX(25deg);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+button {
+    border: none;
+    -webkit-box-shadow: 0 .2em .5em rgba(0,0,0,.5);
+    -moz-box-shadow: 0 .2em .5em rgba(0,0,0,.5);
+    box-shadow: 0 .2em .5em rgba(0,0,0,.5);
+    cursor: pointer;
+    border-radius: .5em;
+    color: #fff;
+    font-size: 3em;
+    padding: .5em 1em;
+    outline: none;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+button:active {
+    -webkit-box-shadow: 0 0 .1em rgba(0,0,0,.5);
+    -box-box-shadow: 0 0 .1em rgba(0,0,0,.5);
+    box-shadow: 0 0 .1em rgba(0,0,0,.5);
+    -webkit-transform: translate(0, 5px);
+    -moz-transform: translate(0, 5px);
+    -ms-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+}
+button:last-child {
+    margin: 0 0 0 2em;
+}
+.yellow {
+    background-color: #e0ad5c;
+    border-bottom: 8px solid #c18f49;
+    text-shadow: 0px 3px #c18f49;
+}
+.yellow:hover {
+    background-color: #CEA250;
+    border-bottom: 8px solid #a57e35;
+    text-shadow: 0px 3px #a57e35;
+}
+.stop {
+    background-color: #E74C3C;
+    border-bottom: 8px solid #BD3E31;
+    text-shadow: 0px 3px #BD3E31;
+}
+.stop:hover {
+    background-color: #db4436;
+    border-bottom: 8px solid #ba382c;
+    text-shadow: 0px 3px #ba382c;
+}
+.start {
+    background-color: #82BF56;
+    border-bottom: 8px solid #669644;
+    text-shadow: 0px 3px #669644;
+}
+.start:hover {
+    background-color: #76ad4c;
+    border-bottom: 8px solid #61933b;
+    text-shadow: 0px 3px #61933b;
+}
+
+/*------------------------------------*\
+    $FOOTER ;)
+\*------------------------------------*/
+footer {
+    margin-top: 4em;
+}
