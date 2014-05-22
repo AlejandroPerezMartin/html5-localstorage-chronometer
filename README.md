@@ -4,4 +4,4 @@
 
 See it live on CodePen: http://codepen.io/alejandroperezmartin/pen/GhAJy
 
-![Chronometer Screenshot](http://i62.tinypic.com/epfza0.jpg)
+![Chronometer Screenshot](http://i61.tinypic.com/2uxxsft.png)
